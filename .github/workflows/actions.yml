@@ -5,3 +5,5 @@ jobs:
   actions:
     runs-on:
     steps:
+      - name: Copia repositorio
+        uses: actions/checkout@v2
