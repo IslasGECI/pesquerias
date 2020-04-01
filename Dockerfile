@@ -1,1 +1,1 @@
-FROM islasgeci/jupyter:3691
+FROM islasgeci/jupyter:75c0
