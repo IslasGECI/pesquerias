@@ -5,5 +5,8 @@ jobs:
   actions:
     runs-on:
     steps:
-      - name: Copia repositorio
-        uses: actions/checkout@v2
+      - name: Construye imagen
+        run: docker build --tag islasgeci/pesquerias .
+      - name: Ejecuta objetivo principal del Makefile
+        run: docker run --volume ${PWD}:/workdir islasgeci/pesquerias make
+        
