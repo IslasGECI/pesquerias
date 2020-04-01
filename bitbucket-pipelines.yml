@@ -1,8 +1,0 @@
-image:
-
-pipelines:
-  custom:
-    manual:
-      - step:
-          script:
-            - make
