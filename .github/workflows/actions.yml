@@ -5,6 +5,8 @@ jobs:
   actions:
     runs-on: ubuntu-18.04
     steps:
+      - name: Copia repositorio
+        uses: actions/checkout@v2
       - name: Construye imagen
         run: docker build --tag islasgeci/pesquerias .
       - name: Ejecuta objetivo principal del Makefile
