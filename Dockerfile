@@ -1,1 +1,1 @@
-FROM rocker/rstudio:latest
+FROM islasgeci/jupyter:3691
