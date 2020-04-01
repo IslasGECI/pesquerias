@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   actions:
-    runs-on:
+    runs-on: ubuntu-18.04
     steps:
       - name: Construye imagen
         run: docker build --tag islasgeci/pesquerias .
