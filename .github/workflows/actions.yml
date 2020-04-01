@@ -11,4 +11,3 @@ jobs:
         run: docker build --tag islasgeci/pesquerias .
       - name: Ejecuta objetivo principal del Makefile
         run: docker run --volume ${PWD}:/workdir islasgeci/pesquerias make
-        
